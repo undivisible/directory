@@ -9,7 +9,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap" rel="stylesheet">
         <style>
             body {
-                background-color: #2b3440;
                 width: 100%;
                 height: 100%;
                 overflow: hidden;
@@ -18,7 +17,7 @@
             a {
                 font-family: 'Darker Grotesque';
                 font-size: x-large;
-                color: #eceff4;
+                color: #2b3440;
                 text-decoration: none;
                 padding: 10px;
                 transition: all 1s ease;
@@ -41,6 +40,7 @@
                 justify-content: center;
                 height: 100%;
                 width: 100%;
+                background-color: #eceff4;
             }
 
             @keyframes rise {
@@ -60,7 +60,7 @@
                     opacity: 1;
                 }
                 to {
-                    background-color: #eceff4;
+                    background-color: #2b3440;
                     transform: translateY(-10px);
                     opacity: 0;
                 }
@@ -69,16 +69,16 @@
     </head>
     <body>
         <div class="centered">
-            <a href="https://undivisible.dev/">undivisible</a>
-            <a href="javascript:void(0);" onclick="fade()" id="two">status</a>
-            <a href="https://clouds.lighting/" id="three">clouds</a>
+            <a href="https://status.undivisible.dev/">undivisible</a>
+            <a href="javascript:void(0);" onclick="fade()" id="two">previous</a>
+            <a href="https://status.clouds.lighting/" id="three">clouds</a>
         </div>
         <script>
             function fade(){
                 document.getElementById('centered').style.animation = "fall 2s ease-in forwards"; 
 
                 setTimeout(() => {
-                window.location = "status.html"; 
+                window.location = "index.html"; 
                 }, 2000);
             }
         </script>
